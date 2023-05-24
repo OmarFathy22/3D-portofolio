@@ -1,11 +1,13 @@
 import React , {useState , useEffect} from "react";
 import styled from "styled-components";
-import logo from "../../../public/img/fashion-removebg-preview.png";
-import search from "../../../public/img/search.png";
-import moon from "../../../public/img/moon.png";
+import logo from "../../assets/img/fashion-removebg-preview.png";
+import search from "../../assets/img/search.png";
+import moon from "../../assets/img/moon.png";
 import { useMediaQuery } from 'react-responsive'
 import { Sphere, MeshDistortMaterial } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
+import bg from '../../assets/img/bg.jpeg'
+
 import {
   OrbitControls,
   PerspectiveCamera,
@@ -13,15 +15,20 @@ import {
   Text,
 } from "@react-three/drei";
 function HERO() {
-  const isMobile = useMediaQuery({ query: '(max-width: 768px)' })
+  const isMobile = useMediaQuery({ query: '(max-width: 1100px)' })
   const Section = styled.div`
+  background-image: url(${bg});
     height: 100vh;
     width: 100%;
     display: flex;
     justify-content: center;
     scroll-snap-align: center;
     scroll-behavior: smooth;
-    @media (max-width: 768px) {
+    @media screen and (min-width: 768px) {
+      scroll-snap-align: center;
+      scroll-behavior: smooth;
+    }
+    @media (max-width: 1100px) {
       height: 200vh;
     }
   `;
@@ -48,7 +55,7 @@ function HERO() {
     display: flex;
     gap: 20px;
 
-    @media (max-width: 768px) {
+    @media (max-width: 1100px) {
       display: none;
     }
   `;
@@ -63,7 +70,7 @@ function HERO() {
     width: 22px;
     height: 22px;
     cursor: pointer;
-    @media (max-width: 768px) {
+    @media (max-width: 1100px) {
       display: none;
     }
   `;
@@ -91,7 +98,7 @@ function HERO() {
     align-items: center;
     height:100%;
     width:100%;
-    @media (max-width: 768px) {
+    @media (max-width: 1100px) {
       height: 200vh;
       flex-direction: column;
     }
@@ -104,7 +111,7 @@ function HERO() {
     height:500px;
     justify-content:flex-start;
     padding-top:20px;
-    @media (max-width: 768px) {
+    @media (max-width: 1100px) {
       height: 100vh;
       align-content: center;
       align-items: center;
@@ -150,7 +157,7 @@ function HERO() {
     position: relative;
     justify-content:center;
     align-items:flex-start;
-      @media (max-width: 768px) {
+      @media (max-width: 1100px) {
       justify-content: center;
       align-content: center;
       align-items: center;
@@ -172,7 +179,7 @@ function HERO() {
       transform: translateY(20px);
      }
     }
-    @media (max-width: 768px) {
+    @media (max-width: 1100px) {
       height: 360px;
       width: 360px;
       left: 60px;

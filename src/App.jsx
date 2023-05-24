@@ -5,8 +5,7 @@ import About from "./components/MainSections/About";
 import Contact from "./components/MainSections/Contact";
 import HERO from "./components/MainSections/Hero";
 import Who from "./components/MainSections/Who";
-import bg from "../public/img/bg.jpeg";
-import Test from "./components/componentSection/CUBE";
+import bg from "./assets/img/bg.jpeg";
 function App() {
   const APP = styled.div`
     background-image: url(${bg});

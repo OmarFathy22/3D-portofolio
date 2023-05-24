@@ -1,19 +1,19 @@
 import React from "react";
 import styled from "styled-components";
-import logo from "../../../public/img/logo.png";
-import search from "../../../public/img/search.png";
-import Cube from "../ModelsSection/Cube";
 import Test from "../componentSection/CUBE";
+import bg from '../../assets/img/bg.jpeg'
 function HERO() {
   const Section = styled.div`
+  background-image: url(${bg});
     height: 100vh;
     width: 100%;
     display: flex;
     justify-content: center;
-    scroll-snap-align: center;
-    scroll-behavior: smooth;
-
-    @media (max-width: 768px) {
+    @media screen and (min-width: 768px) {
+      scroll-snap-align: center;
+      scroll-behavior: smooth;
+    }
+    @media (max-width: 1100px) {
       height: 200vh;
     }
   `;
@@ -29,8 +29,7 @@ function HERO() {
     flex: 1;
     align-items: center;
     flex-direction: row-reverse;
-    @media (max-width: 768px) {
-      height: 150vh;
+    @media (max-width: 1100px) {
       flex-direction: column;
     }
   `;
@@ -39,7 +38,7 @@ function HERO() {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    @media (max-width: 768px) {
+    @media (max-width: 1100px) {
       justify-content: center;
       align-content: center;
       align-items: center;
@@ -79,8 +78,6 @@ function HERO() {
   `;
   const RightMain = styled.section`
     flex: 1;
-  
-    
   `;
 
   return (

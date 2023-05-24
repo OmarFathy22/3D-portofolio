@@ -3,14 +3,19 @@ import styled from "styled-components";
 import MapChart from "../componentSection/Map";
 import emailjs from '@emailjs/browser';
 import { useRef } from "react";
+import bg from '../../assets/img/bg.jpeg'
+
 function HERO() {
   const Section = styled.div`
+  background-image: url(${bg});
     height: 100vh;
     width: 100%;
     display: flex;
     justify-content: center;
-    scroll-snap-align: center;
-    scroll-behavior: smooth;
+    @media screen and (min-width: 768px) {
+      scroll-snap-align: center;
+      scroll-behavior: smooth;
+    }
   `;
   const Container = styled.div`
     width: 100%;
@@ -20,11 +25,12 @@ function HERO() {
 
   `;
   const Main = styled.div`
+    background-image: url(${bg});
     display: flex;
     justify-content: space-between;
     flex: 1;
     align-items: center;
-    @media screen and (max-width: 768px){
+    @media screen and (max-width: 1100px){
       flex-direction:column;
       /* align-items:flex-start; */
       justify-content:flex-start;
@@ -34,7 +40,7 @@ function HERO() {
   `;
   const EmptyContent = styled.div`
     flex: 1.5;
-    @media screen and (max-width: 768px){
+    @media screen and (max-width: 1100px){
       display:none;
     }
     `
@@ -51,7 +57,7 @@ function HERO() {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    @media screen and (max-width: 768px){
+    @media screen and (max-width: 1100px){
       width:340px;
       text-align:center;
     }

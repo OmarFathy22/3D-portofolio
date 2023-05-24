@@ -10,15 +10,17 @@ import Atom from '../ModelsSection/Atom';
 
 const WebDesign = () => {
   return (
-<>
-      <Canvas camera={{ position: [0, 0, 10] }}>
-        <Suspense fallback={null}>
-          <Atom />
-          <OrbitControls enableZoom={false} autoRotate />
-        </Suspense>
-      </Canvas>
+
+  <div  className='styleModels'>
+        <Canvas camera={{ position: [0, 0, 10] }}>
+          <Suspense fallback={null}>
+            <Atom />
+            <OrbitControls enableZoom={false} autoRotate />
+          </Suspense>
+        </Canvas>
+  </div>
     
-    </>
+  
   );
 }
 

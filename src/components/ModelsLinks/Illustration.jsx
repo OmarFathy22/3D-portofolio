@@ -5,16 +5,18 @@ import Car from '../ModelsSection/Car'
 
 const WebDesign = () => {
   return (
-    <Canvas>
-    <ambientLight />
-    <pointLight position={[10, 10, 10]} />
-     <Stage environment="city" intensity={0.5}>
-    {/* <ModelDraco /> */}
-    <Car />
-
-     </Stage>
-    <OrbitControls autoRotate enableZoom={false} />
-  </Canvas>
+  <div className='styleModels'>
+      <Canvas>
+      <ambientLight />
+      <pointLight position={[10, 10, 10]} />
+       <Stage environment="city" intensity={0.5}>
+      {/* <ModelDraco /> */}
+      <Car />
+    
+       </Stage>
+      <OrbitControls autoRotate enableZoom={false} />
+    </Canvas>
+  </div>
   );
 }
 
