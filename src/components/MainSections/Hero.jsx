@@ -22,6 +22,9 @@ function HERO() {
     width: 100%;
     display: flex;
     justify-content: center;
+      @media (max-width: 1100px) {
+        height:115vh;
+      }
   
   `;
   const Container = styled.div`
