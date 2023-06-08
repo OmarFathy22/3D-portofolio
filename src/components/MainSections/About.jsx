@@ -140,7 +140,7 @@ function HERO() {
           <RightMain>
             {Work === "Web Design" && <WebDesign />}
             {Work === "Social Media" && <SocialMedia />}
-            {Work === "Product Design" && <ProductDesign />}
+            {Work === "Design" && <ProductDesign />}
             {Work === "Illustration" && <Illustration />}
             {Work === "Development" && <Development />}
           </RightMain>

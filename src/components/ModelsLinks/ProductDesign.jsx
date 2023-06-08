@@ -9,7 +9,7 @@ const WebDesign = () => {
       <Canvas >
       <ambientLight />
       <pointLight position={[10, 10, 10]} />
-       <Stage environment="city" intensity={0.5}>
+       <Stage environment="forest" intensity={0.5}>
       <Shoe />
       {/* <Car /> */}
     
