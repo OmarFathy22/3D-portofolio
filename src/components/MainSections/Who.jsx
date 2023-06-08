@@ -5,7 +5,7 @@ import bg from '../../assets/img/bg.jpeg'
 function HERO() {
   const Section = styled.div`
   background-image: url(${bg});
-    height: 100vh;
+    height: 120vh;
     width: 100%;
     display: flex;
     justify-content: center;

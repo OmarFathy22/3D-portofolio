@@ -11,7 +11,7 @@ function HERO() {
   const [Work, setWork] = useState("Web Design");
   const Section = styled.div`
   background-image: url(${bg});
-    height: 100vh;
+  height: 120vh;
     width: 100%;
     display: flex;
     justify-content: center;
